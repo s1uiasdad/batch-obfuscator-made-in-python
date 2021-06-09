@@ -4,7 +4,7 @@ obfuscate a batch file with this simple to use python script
 ## **Disclaimer:**
 This tool is for educational use only, the author will not be held responsible for any misuse of this tool.
 
-## **Example**
+## **Example:**
 The python script can turn 
 ```
 @echo off
