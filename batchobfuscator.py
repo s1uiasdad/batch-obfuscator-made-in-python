@@ -199,7 +199,7 @@ while True:
     intorator22 = intorator22 + 1
     intorator2 = intorator2 + 1
     #print("loop:" + str(intorator22))
-    if intorator2 == len(result2) -2:
+    if intorator2 == len(result2) -1:
         break
     #print(intorator2)
     #print(intorator22)
