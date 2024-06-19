@@ -1,13 +1,13 @@
 import time
-import pyfiglet
+import sys
 import subprocess
 import os
 import easygui
 from tqdm import tqdm
-print(pyfiglet.figlet_format("batch obuscator by moom825"))
+print("batch obuscator by moom825")
 print("please pick a batch file")
 time.sleep(2)
-file = easygui.fileopenbox()
+file = sys.argv[1]
 file = open(file,mode='r')
 DNA = file.read()
 file.close()
