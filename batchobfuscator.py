@@ -11,7 +11,7 @@ file = sys.argv[1]
 file = open(file,mode='r')
 DNA = file.read()
 file.close()
-yorn = input("would you like to add random ^ to the obfuscation(may break script. not recommended) y or n: ")
+yorn = sys.argv[2]
 if yorn == "n":
     isittrueorfalse = False
     number = 2
@@ -294,7 +294,7 @@ while True:
 DNA = DNA.replace("ckoco", "%%~")
 DNA = DNA.replace("croco", "%~")
 DNA = DNA.replace("replaced", "%")
-name = input("enter output file name(do not include extention): ")
+name = sys.argv[3]
 for i in tqdm(range(10)):
     time.sleep(2)
 f = open(name+".bat", "w")
