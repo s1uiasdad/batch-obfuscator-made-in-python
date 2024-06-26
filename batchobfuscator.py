@@ -7,6 +7,7 @@ import random
 import numpy as np
 from tqdm import tqdm
 
+from obf.obf import *
 from obf.obfvar import *
 
 print("batch obuscator by moom825")
@@ -15,7 +16,7 @@ time.sleep(2)
 file = sys.argv[1]
 file = open(file,mode='r')
 alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%"
-DNA = obfuscatevar(file.read(), alphabet, 25, 30)
+DNA = obfuscate(file.read())
 file.close()
 yorn = sys.argv[2]
 if yorn == "n":
