@@ -6,6 +6,7 @@ import easygui
 import random
 import numpy as np
 from tqdm import tqdm
+
 from obf.obfvar import *
 
 print("batch obuscator by moom825")
