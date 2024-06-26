@@ -14,7 +14,7 @@ time.sleep(2)
 file = sys.argv[1]
 file = open(file,mode='r')
 alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%"
-DNA = obfuscate(file.read(), alphabet, 25, 30)
+DNA = obfuscatevar(file.read(), alphabet, 25, 30)
 file.close()
 yorn = sys.argv[2]
 if yorn == "n":
