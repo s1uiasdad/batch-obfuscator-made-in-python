@@ -15,8 +15,7 @@ print("please pick a batch file")
 time.sleep(2)
 file = sys.argv[1]
 file = open(file,mode='r')
-alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%"
-DNA = obfuscate(file.read())
+DNA = file.read()
 file.close()
 yorn = sys.argv[2]
 if yorn == "n":
