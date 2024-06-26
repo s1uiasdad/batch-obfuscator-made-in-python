@@ -1,4 +1,4 @@
-def obfuscate(code, alphabet, sets_num, min_name_length):
+def obfuscatevar(code, alphabet, sets_num, min_name_length):
     # This is the list that gets used to generate the name of each Set
     Il = ["I", "l"]
 
